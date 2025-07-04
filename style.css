@@ -1,13 +1,9 @@
 :root {
-  --main-bg: #fffaf0;
-  --main-text: #333333;
-  --accent: #e56b6f;
-  --nav-bg: #222;
-  --nav-text: #ffffff;
-  --button-bg: #e56b6f;
-  --button-text: #ffffff;
-  --form-bg: #f4f4f4;
-  --table-border: #ddd;
+  --text: #000000;
+  --background: #f8f8fb;
+  --primary: #f6c5dd;
+  --secondary: #a41521;
+  --accent: #da5596;
 }
 
 body {
