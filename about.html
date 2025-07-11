@@ -120,6 +120,38 @@
             border-radius: 10px;
         }
 
+        .shelter-stats {
+            max-width: 750px;
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 90%;
+        }
+
+        .shelter-stats-heading {
+            text-align: center;
+            color: var(--secondary);
+            font-size: 28px;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+
+        .shelter-stats th,
+        .shelter-stats td {
+            border: 2px solid var(--secondary);
+            padding: 12px 16px;
+            text-align: left;
+        }
+
+        .shelter-stats thead {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .shelter-stats tbody tr {
+            background-color: var(--primary);
+            color: var(--secondary);
+        }
+
         footer {
             background-color: var(--secondary);
             color: white;
@@ -131,14 +163,6 @@
         footer a {
             color: white;
             text-decoration: underline;
-        }
-
-        .statistics-image {
-            display: block;
-            max-width: 90%;
-            margin: 20px auto 40px;
-            border-radius: 10px;
-            border: 4px solid var(--primary);
         }
     </style>
 </head>
@@ -187,8 +211,34 @@
         <a href="https://news.asu.edu/20190402-discoveries-sleepovers-reduce-stress-shelter-dogs" target="_blank">Read the article</a>
     </section>
 
-    <!-- Shelter Statistics Image -->
-    <img src="ShelterStatistics.png" alt="Shelter Statistics Table" class="statistics-image">
+    <!-- Shelter Statistics Table Section -->
+    <h3 class="shelter-stats-heading">Shelter Statistics</h3>
+    <table class="shelter-stats">
+        <thead>
+            <tr>
+                <th>Statistic</th>
+                <th>Numerical Value</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dogs Entering Shelters Annually</td>
+                <td>~3.1 Million</td>
+                <td>ASPCA</td>
+            </tr>
+            <tr>
+                <td>Dogs Adopted Annually</td>
+                <td>~2 Million</td>
+                <td>ASPCA</td>
+            </tr>
+            <tr>
+                <td>Dogs Euthanized Annually</td>
+                <td>~390,000</td>
+                <td>Humane Society</td>
+            </tr>
+        </tbody>
+    </table>
 
     <footer>
         <p>&copy; 2025 Morgan Saunders - M6 Arts</p>
@@ -196,4 +246,3 @@
     </footer>
 </body>
 </html>
-
