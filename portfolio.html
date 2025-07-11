@@ -78,18 +78,16 @@
         }
 
         .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
             padding: 0 30px 30px;
-            justify-items: center;
         }
 
         .portfolio-grid img {
             height: 250px;
-            width: 100%;
-            max-width: 100%;
-            object-fit: cover;
+            width: auto;
             border: 3px solid var(--primary);
             border-radius: 10px;
         }
@@ -138,10 +136,10 @@
     <div class="portfolio-grid">
         <img src="marlboroswirl.jpg" alt="Marlboro Swirl">
         <img src="cherrybow.jpg" alt="Cherry Bow">
-        <img src="Ocean.jpg" alt="Ocean"> <!-- Check casing -->
-        <img src="69ofHearts.jpg" alt="69 of Hearts"> <!-- Verify filename -->
+        <img src="Ocean.jpg" alt="Ocean">
+        <img src="69ofHearts.jpg" alt="69 of Hearts">
         <img src="cherrylip.jpg" alt="Cherry Lip">
-        <img src="Swirls.jpg" alt="Swirls"> <!-- Check casing -->
+        <img src="swirls.jpg" alt="Swirls">
     </div>
 
     <footer>
