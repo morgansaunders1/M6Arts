@@ -1,30 +1,171 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>About & Mission - M6 Arts</title>
+    <meta name="description" content="Learn more about Morgan Saunders, the artist behind M6 Arts, and her mission to support animal welfare through art.">
+    <meta name="author" content="Morgan Saunders">
     <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --text: #000000;
+            --background: #f8f8fb;
+            --primary: #f6c5dd;
+            --secondary: #a41521;
+            --accent: #da5596;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--secondary);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: var(--text);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        .pinstripe-heading {
+            background-color: var(--primary);
+            text-align: center;
+            padding: 15px 0;
+            border-top: 2px solid var(--secondary);
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        .pinstripe-heading h2 {
+            color: var(--secondary);
+            font-size: 28px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .mission-box {
+            background-color: var(--secondary);
+            color: var(--primary);
+            margin: 40px auto;
+            max-width: 750px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .mission-box p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .section-heading {
+            text-align: center;
+            color: var(--secondary);
+            font-size: 26px;
+            margin-top: 60px;
+            letter-spacing: 1px;
+        }
+
+        .resource-box {
+            background-color: var(--secondary);
+            color: var(--primary);
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .resource-box a {
+            color: var(--primary);
+            word-break: break-word;
+        }
+
+        video {
+            display: block;
+            margin: 30px auto;
+            max-width: 90%;
+            border: 4px solid var(--primary);
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About & Mission</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <h2>ABOUT ME & MY MISSION</h2>
-    <section class="about">
-        <p>My name is Morgan Saunders, and I'm the artist behind M6 Arts. This name represents myself and my birthday 5/6. I've always been drawn to animal welfare and have a deep passion for art. I strive to combine these passions by creating art that starts conversations and supports compassion. Each piece is created with intention, often reflecting personal experience, emotion, or advocacy.</p>
-    </section>
-    <section class="learn-more">
-        <h3>LEARN MORE ABOUT ANIMAL WELFARE</h3>
-        <p><strong>"A Conversation With Isabella Giannuzzi"</strong><br>
-        A brief video interview diving into animal rescue in San Diego. Recommended viewing for understanding the motivation behind this art.</p>
+    <header>
+        <h1>M6 ARTS</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About & Mission</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-        <p><strong>"Sacramento reduces euth rates at their shelter"</strong><br>
-        An inspiring look at how shelters are finding new solutions and saving more lives.</p>
-        <a href="https://www.goodgoodgood.co/articles/sacramento-animal-shelter-reduces-euthanasia-rates">Read Article</a>
+    <section class="pinstripe-heading">
+        <h2>ABOUT ME & MY MISSION</h2>
     </section>
-<footer>
+
+    <main>
+        <section class="mission-box">
+            <p>My name is Morgan Saunders, and I’m the artist behind M6 Arts. The name “M6” is inspired by my birthday, 6/6. Six has always been my favorite number and holds a special meaning for me.</p>
+            <p>I’m currently an art student at Arizona State University, but I grew up in a small rural town in Washington state. Creativity has always been a central part of my life, and I plan to grow M6 Arts beyond prints, exploring new mediums and ways to connect through art.</p>
+            <p>Alongside art, animals have always held a special place in my heart. I grew up surrounded by dogs and horses, and moving away for school made me realize just how much I missed that bond. This led me to start volunteering at shelters and fostering dogs, which opened my eyes to the many challenges animals face in Arizona and across the United States.</p>
+            <p>These experiences ignited a lifelong passion for animal welfare and a commitment to advocate for animals in need through every aspect of my life and work. My mission is to use my art to raise awareness, support rescue efforts, and inspire others to care for and protect animals everywhere.</p>
+        </section>
+
+        <h3 class="section-heading">LEARN MORE ABOUT ANIMAL WELFARE</h3>
+
+        <section class="resource-box">
+            <p><strong>“A Conversation With Isabel Klee (SimonSits)”</strong></p>
+            <p>Isabel Klee is someone I deeply admire and continue to learn from. She is a talented writer, influencer, devoted dog mom, foster dog mom, and a passionate advocate for animal welfare.</p>
+            <p>This entire podcast is incredibly inspiring, but if you have the time, I especially recommend listening to the segment from 34:00 to the end — it’s truly worth it.</p>
+            <a href="https://www.youtube.com/watch?v=eh-wUdacY34" target="_blank">https://www.youtube.com/watch?v=eh-wUdacY34</a>
+        </section>
+
+        <section class="resource-box">
+            <p><strong>“Sleepovers reduce stress in shelter dogs”</strong></p>
+            <p>ASU study shows short-term fostering temporarily reduces cortisol levels and increases rest in shelter dogs.</p>
+            <a href="https://news.asu.edu/20190402-discoveries-sleepovers-reduce-stress-shelter-dogs" target="_blank">Read the article</a>
+        </section>
+
+        <video controls>
+            <source src="shelterdogs-awareness.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </main>
+
+    <footer>
         <p>&copy; 2025 Morgan Saunders - M6 Arts</p>
         <p><a href="mailto:morgansaundersarts@gmail.com"><i>morgansaundersarts@gmail.com</i></a></p>
     </footer>
