@@ -1,29 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - M6 Arts</title>
+    <meta name="description" content="Explore the digital art portfolio of Morgan Saunders, M6 Arts.">
+    <meta name="author" content="Morgan Saunders">
     <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --text: #000000;
+            --background: #f8f8fb;
+            --primary: #f6c5dd;
+            --secondary: #a41521;
+            --accent: #da5596;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--secondary);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: var(--text);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-top: 30px;
+            color: var(--accent);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            justify-items: center;
+        }
+
+        .portfolio-grid img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border: 3px solid var(--primary);
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About & Mission</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <h2>PORTFOLIO</h2>
-    <div class="portfolio-grid">
-        <img src="Cali Girl- 18x24in.jpg" alt="Cali Girl">
-        <img src="tulipboot.jpg" alt="Tulip Boot">
-        <img src="cherrybow.jpg" alt="Cherry Bow">
-        <img src="Ocean.jpg" alt="Ocean Painting">
-        <img src="On Top- 18 x 24 in.jpg" alt="On Top">
-        <img src="Coquette Cherries- 18 x 24 in.jpg" alt="Coquette Cherries">
-        <img src="Cherry Lips Blue Background- 24x36in.jpg" alt="Cherry Lips Blue">
-        <img src="Cherry Lips Pink Background- 18x24in.jpg" alt="Cherry Lips Pink">
-        <img src="marlboroswirl.jpg" alt="Marlboro Swirl">
-    </div>
-<footer>
+    <header>
+        <h1>M6 ARTS</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About & Mission</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>PORTFOLIO</h2>
+        <div class="portfolio-grid">
+            <img src="Cali Girl- 18x24in.jpg" alt="Cali Girl">
+            <img src="tulipboot.jpg" alt="Tulip Boot">
+            <img src="cherrybow.jpg" alt="Cherry Bow">
+            <img src="Ocean.jpg" alt="Ocean Painting">
+            <img src="On Top- 18 x 24 in.jpg" alt="On Top">
+            <img src="Coquette Cherries- 18 x 24 in.jpg" alt="Coquette Cherries">
+            <img src="Cherry Lips Blue Background- 24x36in.jpg" alt="Cherry Lips Blue">
+            <img src="Cherry Lips Pink Background- 18x24in.jpg" alt="Cherry Lips Pink">
+            <img src="marlboroswirl.jpg" alt="Marlboro Swirl">
+        </div>
+    </main>
+
+    <footer>
         <p>&copy; 2025 Morgan Saunders - M6 Arts</p>
         <p><a href="mailto:morgansaundersarts@gmail.com"><i>morgansaundersarts@gmail.com</i></a></p>
     </footer>
