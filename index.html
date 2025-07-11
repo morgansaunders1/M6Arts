@@ -1,3 +1,5 @@
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,24 +7,133 @@
     <meta name="description" content="M6 Arts by Morgan Saunders — hand-painted digital prints supporting animal welfare.">
     <meta name="author" content="Morgan Saunders">
     <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --text: #000000;
+            --background: #f8f8fb;
+            --primary: #f6c5dd;
+            --secondary: #a41521;
+            --accent: #da5596;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--secondary);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--primary);
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: var(--text);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        .featured-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .featured-images img {
+            width: 200px;
+            height: auto;
+            border: 3px solid var(--primary);
+            border-radius: 10px;
+        }
+
+        .mission-bar {
+            background-color: var(--primary);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .mission-bar p {
+            font-style: italic;
+            margin: 5px 0;
+            color: var(--text);
+        }
+
+        .ginnie-section {
+            background-color: var(--secondary);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+        .ginnie-section img {
+            width: 250px;
+            border-radius: 10px;
+            border: 3px solid var(--primary);
+        }
+
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>M6 ARTS</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="about.html">About & Mission</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <h1>M6 ARTS</h1>
-        <div class="featured-images">
+    </header>
+
+    <main>
+        <section class="featured-images">
             <img src="Cali Girl- 18x24in.jpg" alt="Cali Girl">
             <img src="tulipboot.jpg" alt="Tulip Boot">
             <img src="cherrybow.jpg" alt="Cherry Bow">
-        </div>
-        <p class="mission-tagline">An array of hand-painted prints and artwork with a mission to raise awareness and advocate for animal welfare.</p>
-        <p class="byline">By Morgan Saunders</p>
-    </header>
+        </section>
+
+        <section class="mission-bar">
+            <p>An array of hand-painted prints and artwork with a mission to raise awareness and advocate for animal welfare.</p>
+            <p>By Morgan Saunders</p>
+        </section>
+
+        <section class="ginnie-section">
+            <img src="Ginnie and me.jpg" alt="Ginnie and Me">
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2025 Morgan Saunders - M6 Arts</p>
         <p><a href="mailto:morgansaundersarts@gmail.com"><i>morgansaundersarts@gmail.com</i></a></p>
