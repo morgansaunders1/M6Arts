@@ -9,7 +9,7 @@
     <style>
         :root {
             --text: #000000;
-            --background: #f8f8fb;
+            --background: #ffffff;
             --primary: #f6c5dd;
             --secondary: #a41521;
             --accent: #da5596;
@@ -63,20 +63,38 @@
             letter-spacing: 2px;
         }
 
+        .portfolio-intro {
+            text-align: center;
+            color: var(--secondary);
+            font-size: 14px;
+            margin: 20px auto 10px;
+            max-width: 600px;
+            padding: 0 15px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--secondary);
+            margin: 40px 0 10px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 30px;
+            gap: 25px;
+            padding: 0 30px 30px;
             justify-items: center;
         }
 
         .portfolio-grid img {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
+            height: 250px; /* consistent height */
+            width: auto; /* variable width */
             border: 3px solid var(--primary);
             border-radius: 10px;
+            object-fit: cover;
         }
 
         footer {
@@ -108,16 +126,28 @@
         <h2>PORTFOLIO</h2>
     </section>
 
+    <p class="portfolio-intro">
+        Welcome to my portfolio. This collection showcases my past oil and acrylic paintings.
+    </p>
+
     <main>
+        <!-- Oil Paintings Section -->
+        <div class="section-title">Oil Paintings</div>
         <div class="portfolio-grid">
-            <img src="Cali Girl- 18x24in.jpg" alt="Cali Girl">
+            <img src="allwhitestilllife.jpg" alt="All White Still Life">
             <img src="tulipboot.jpg" alt="Tulip Boot">
+            <img src="cake.jpg" alt="Cake">
+        </div>
+
+        <!-- Acrylic Paintings Section -->
+        <div class="section-title">Acrylic</div>
+        <div class="portfolio-grid">
+            <img src="marlboroswirl.jpg" alt="Marlboro Swirl">
             <img src="cherrybow.jpg" alt="Cherry Bow">
-            <img src="Ocean.jpg" alt="Ocean Painting">
-            <img src="On Top- 18 x 24 in.jpg" alt="On Top">
-            <img src="Coquette Cherries- 18 x 24 in.jpg" alt="Coquette Cherries">
-            <img src="Cherry Lips Blue Background- 24x36in.jpg" alt="Cherry Lips Blue">
-            <img src="Cherry Lips Pink Background- 18x24in.jpg" alt="Cherry Lips Pink">
+            <img src="ocean.jpg" alt="Ocean">
+            <img src="69ofHearts.jpg" alt="69 of Hearts">
+            <img src="cherrylip.jpg" alt="Cherry Lip">
+            <img src="Swirls.jpg" alt="Swirls">
         </div>
     </main>
 
