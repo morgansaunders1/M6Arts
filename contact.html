@@ -1,213 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact - M6 Arts</title>
-    <meta name="description" content="Get in touch with Morgan Saunders for commissions and inquiries.">
-    <meta name="author" content="Morgan Saunders">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        :root {
-            --text: #000000;
-            --background: #f8f8fb;
-            --primary: #f6c5dd;
-            --secondary: #a41521;
-            --accent: #da5596;
-        }
+   <meta charset="UTF-8">
+   <title>Contact - M6 Arts</title>
+   <meta name="description" content="Get in touch with Morgan Saunders for commissions and inquiries.">
+   <meta name="author" content="Morgan Saunders">
+   <link rel="stylesheet" href="style.css">
+   <style>
+       :root {
+           --text: #000000;
+           --background: #f8f8fb;
+           --primary: #f6c5dd;
+           --secondary: #a41521;
+           --accent: #da5596;
+       }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background);
-            color: var(--text);
-        }
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: var(--background);
+           color: var(--text);
+       }
 
-        header {
-            background-color: var(--secondary);
-            padding: 20px 0;
-            text-align: center;
-        }
+       header {
+           background-color: var(--secondary);
+           padding: 20px 0;
+           text-align: center;
+       }
 
-        header h1 {
-            color: var(--primary);
-            font-size: 36px;
-            margin: 0;
-        }
+       header h1 {
+           color: var(--primary);
+           font-size: 36px;
+           margin: 0;
+       }
 
-        nav {
-            margin-top: 10px;
-        }
+       nav {
+           margin-top: 10px;
+       }
 
-        nav a {
-            color: var(--text);
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            letter-spacing: 2px;
-        }
+       nav a {
+           color: var(--text);
+           margin: 0 20px;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 16px;
+           letter-spacing: 2px;
+       }
 
-        .pinstripe-heading {
-            background-color: var(--primary);
-            text-align: center;
-            padding: 15px 0;
-            border-top: 2px solid var(--secondary);
-            border-bottom: 2px solid var(--secondary);
-        }
+       .pinstripe-heading {
+           background-color: var(--primary);
+           text-align: center;
+           padding: 15px 0;
+           border-top: 2px solid var(--secondary);
+           border-bottom: 2px solid var(--secondary);
+       }
 
-        .pinstripe-heading h2 {
-            color: var(--secondary);
-            font-size: 28px;
-            margin: 0;
-            letter-spacing: 2px;
-        }
+       .pinstripe-heading h2 {
+           color: var(--secondary);
+           font-size: 28px;
+           margin: 0;
+           letter-spacing: 2px;
+       }
 
-        main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px 20px;
-        }
+       main {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           padding: 40px 20px;
+       }
 
-        .form-container {
-            background-color: var(--primary);
-            padding: 30px;
-            border: 3px solid var(--secondary);
-            max-width: 600px;
-            width: 100%;
-        }
+       .form-container {
+           background-color: var(--primary);
+           padding: 30px;
+           border: 3px solid var(--secondary);
+           max-width: 600px;
+           width: 100%;
+       }
 
-        .form-inner {
-            background-color: var(--secondary);
-            padding: 30px;
-            border-radius: 10px;
-        }
+       .form-inner {
+           background-color: var(--secondary);
+           padding: 30px;
+           border-radius: 10px;
+       }
 
-        .form-inner h3 {
-            color: white;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 25px;
-            font-size: 24px;
-        }
+       .form-inner h3 {
+           color: white;
+           text-align: center;
+           margin-top: 0;
+           margin-bottom: 25px;
+           font-size: 24px;
+       }
 
-        form {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-        }
+       form {
+           background-color: white;
+           padding: 25px;
+           border-radius: 10px;
+       }
 
-        label {
-            display: block;
-            font-weight: bold;
-            margin: 10px 0 5px;
-        }
+       label {
+           display: block;
+           font-weight: bold;
+           margin: 10px 0 5px;
+       }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-            box-sizing: border-box;
-        }
+       input[type="text"],
+       input[type="email"],
+       textarea {
+           width: 100%;
+           padding: 10px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+           font-size: 14px;
+           box-sizing: border-box;
+       }
 
-        .row {
-            display: flex;
-            gap: 10px;
-        }
+       .row {
+           display: flex;
+           gap: 10px;
+       }
 
-        .row input {
-            flex: 1;
-        }
+       .row input {
+           flex: 1;
+       }
 
-        textarea {
-            height: 100px;
-            resize: vertical;
-        }
+       textarea {
+           height: 100px;
+           resize: vertical;
+       }
 
-        button {
-            margin-top: 20px;
-            display: block;
-            width: 100px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: var(--primary);
-            color: black;
-            padding: 10px;
-            border: none;
-            border-radius: 20px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+       button {
+           margin-top: 20px;
+           display: block;
+           width: 100px;
+           margin-left: auto;
+           margin-right: auto;
+           background-color: var(--primary);
+           color: black;
+           padding: 10px;
+           border: none;
+           border-radius: 20px;
+           font-weight: bold;
+           cursor: pointer;
+       }
 
-        button:hover {
-            background-color: var(--accent);
-        }
+       button:hover {
+           background-color: var(--accent);
+       }
 
-        footer {
-            background-color: var(--secondary);
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 14px;
-        }
+       .contact-message {
+           color: red;
+           text-align: center;
+           font-weight: bold;
+           margin-bottom: 20px;
+           font-size: 18px;
+       }
 
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
-    </style>
+       .form-image {
+           display: block;
+           margin: 20px auto 0;
+           max-width: 600px;
+           width: 100%;
+           border-radius: 10px;
+           border: 3px solid var(--primary);
+       }
+
+       footer {
+           background-color: var(--secondary);
+           color: white;
+           padding: 15px;
+           text-align: center;
+           font-size: 14px;
+       }
+
+       footer a {
+           color: white;
+           text-decoration: underline;
+       }
+   </style>
 </head>
 <body>
-    <header>
-        <h1>M6 ARTS</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="about.html">About & Mission</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+   <header>
+       <h1>M6 ARTS</h1>
+       <nav>
+           <a href="index.html">Home</a>
+           <a href="portfolio.html">Portfolio</a>
+           <a href="about.html">About & Mission</a>
+           <a href="contact.html">Contact</a>
+       </nav>
+   </header>
 
-    <section class="pinstripe-heading">
-        <h2>CONTACT</h2>
-    </section>
+   <section class="pinstripe-heading">
+       <h2>CONTACT</h2>
+   </section>
 
-    <main>
-        <div class="form-container">
-            <div class="form-inner">
-                <h3>Commission Inquiry Form</h3>
-                <form>
-                    <div class="row">
-                        <div>
-                            <label for="firstName">First name</label>
-                            <input type="text" id="firstName" name="firstName" placeholder="Your name">
-                        </div>
-                        <div>
-                            <label for="lastName">Last name</label>
-                            <input type="text" id="lastName" name="lastName" placeholder="Your name">
-                        </div>
-                    </div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your email">
-                    
-                    <label for="message">What can I create for you?</label>
-                    <textarea id="message" name="message" placeholder="Your message"></textarea>
+   <main>
+       <div class="form-container">
+           <p class="contact-message">
+               I would love to create something for you. Please fill out my contact form below and I will reach out to you as soon as possible!
+           </p>
+           <div class="form-inner">
+               <h3>Commission Inquiry Form</h3>
+               <form>
+                   <div class="row">
+                       <div>
+                           <label for="firstName">First name</label>
+                           <input type="text" id="firstName" name="firstName" placeholder="Your name">
+                       </div>
+                       <div>
+                           <label for="lastName">Last name</label>
+                           <input type="text" id="lastName" name="lastName" placeholder="Your name">
+                       </div>
+                   </div>
+                   <label for="email">Email</label>
+                   <input type="email" id="email" name="email" placeholder="Your email">
 
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-    </main>
+                   <label for="message">What can I create for you?</label>
+                   <textarea id="message" name="message" placeholder="Your message"></textarea>
 
-    <footer>
-        <p>&copy; 2025 Morgan Saunders - M6 Arts</p>
-        <p><a href="mailto:morgansaundersarts@gmail.com"><i>morgansaundersarts@gmail.com</i></a></p>
-    </footer>
+                   <button type="submit">Send</button>
+               </form>
+           </div>
+           <img src="allwhitestilllife.jpg" alt="All White Still Life" class="form-image">
+       </div>
+   </main>
+
+   <footer>
+       <p>&copy; 2025 Morgan Saunders - M6 Arts</p>
+       <p><a href="mailto:morgansaundersarts@gmail.com"><i>morgansaundersarts@gmail.com</i></a></p>
+   </footer>
 </body>
 </html>
-
