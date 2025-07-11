@@ -48,11 +48,19 @@
             letter-spacing: 2px;
         }
 
-        h2 {
+        .pinstripe-heading {
+            background-color: var(--primary);
             text-align: center;
+            padding: 15px 0;
+            border-top: 2px solid var(--secondary);
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        .pinstripe-heading h2 {
+            color: var(--secondary);
             font-size: 28px;
-            margin-top: 30px;
-            color: var(--accent);
+            margin: 0;
+            letter-spacing: 2px;
         }
 
         .portfolio-grid {
@@ -96,8 +104,11 @@
         </nav>
     </header>
 
-    <main>
+    <section class="pinstripe-heading">
         <h2>PORTFOLIO</h2>
+    </section>
+
+    <main>
         <div class="portfolio-grid">
             <img src="Cali Girl- 18x24in.jpg" alt="Cali Girl">
             <img src="tulipboot.jpg" alt="Tulip Boot">
