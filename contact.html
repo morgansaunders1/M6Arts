@@ -65,9 +65,18 @@
 
        main {
            display: flex;
-           justify-content: center;
+           flex-direction: column;
            align-items: center;
            padding: 40px 20px;
+       }
+
+       .contact-message {
+           color: var(--secondary);
+           font-weight: bold;
+           font-size: 18px;
+           text-align: center;
+           margin-bottom: 20px;
+           max-width: 600px;
        }
 
        .form-container {
@@ -76,6 +85,7 @@
            border: 3px solid var(--secondary);
            max-width: 600px;
            width: 100%;
+           margin-bottom: 20px;
        }
 
        .form-inner {
@@ -148,14 +158,6 @@
            background-color: var(--accent);
        }
 
-       .contact-message {
-           color: red;
-           text-align: center;
-           font-weight: bold;
-           margin-bottom: 20px;
-           font-size: 18px;
-       }
-
        .form-image {
            display: block;
            margin: 20px auto 0;
@@ -195,10 +197,11 @@
    </section>
 
    <main>
+       <p class="contact-message">
+           I would love to create something for you. Please fill out my contact form below and I will reach out to you as soon as possible!
+       </p>
+
        <div class="form-container">
-           <p class="contact-message">
-               I would love to create something for you. Please fill out my contact form below and I will reach out to you as soon as possible!
-           </p>
            <div class="form-inner">
                <h3>Commission Inquiry Form</h3>
                <form>
@@ -221,8 +224,9 @@
                    <button type="submit">Send</button>
                </form>
            </div>
-           <img src="allwhitestilllife.jpg" alt="All White Still Life" class="form-image">
        </div>
+
+       <img src="allwhitestilllife.jpg" alt="All White Still Life" class="form-image">
    </main>
 
    <footer>
