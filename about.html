@@ -10,9 +10,9 @@
         :root {
             --text: #000000;
             --background: #f8f8fb;
-            --primary: #f6c5dd;
-            --secondary: #a41521;
-            --accent: #da5596;
+            --primary: #f6c5dd;       /* Light pink */
+            --secondary: #a41521;     /* Dark red */
+            --accent: #da5596;        /* Pink accent */
         }
 
         body {
@@ -77,12 +77,26 @@
             margin-bottom: 15px;
         }
 
+        /* Pink pinstripe behind the animal welfare heading */
         .section-heading {
             text-align: center;
             color: var(--secondary);
             font-size: 26px;
             margin-top: 60px;
             letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+            padding: 10px 40px;
+            background: repeating-linear-gradient(
+                45deg,
+                var(--primary),
+                var(--primary) 5px,
+                var(--accent) 5px,
+                var(--accent) 10px
+            );
+            border-radius: 6px;
+            color: var(--secondary);
+            font-weight: bold;
         }
 
         .resource-box {
@@ -151,6 +165,12 @@
             <p>Isabel Klee is someone I deeply admire and continue to learn from. She is a talented writer, influencer, devoted dog mom, foster dog mom, and a passionate advocate for animal welfare.</p>
             <p>This entire podcast is incredibly inspiring, but if you have the time, I especially recommend listening to the segment from 34:00 to the end — it’s truly worth it.</p>
             <a href="https://www.youtube.com/watch?v=eh-wUdacY34" target="_blank">https://www.youtube.com/watch?v=eh-wUdacY34</a>
+
+            <!-- New video added below the explanation -->
+            <video controls>
+                <source src="IsabelKleeInterviewClip.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
 
         <section class="resource-box">
