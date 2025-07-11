@@ -20,7 +20,7 @@
             margin: 0;
             padding: 0;
             background-color: var(--background);
-            color: var(--text);
+            color: var(--secondary);
         }
 
         header {
@@ -63,38 +63,35 @@
             letter-spacing: 2px;
         }
 
-        .portfolio-intro {
+        .intro-text {
             text-align: center;
-            color: var(--secondary);
             font-size: 14px;
             margin: 20px auto 10px;
-            max-width: 600px;
-            padding: 0 15px;
+            color: var(--secondary);
         }
 
         .section-title {
-            font-size: 20px;
             font-weight: bold;
+            font-size: 20px;
+            margin: 30px 30px 10px;
             color: var(--secondary);
-            margin: 40px 0 10px;
-            text-align: center;
-            letter-spacing: 1px;
         }
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 25px;
             padding: 0 30px 30px;
             justify-items: center;
         }
 
         .portfolio-grid img {
-            height: 250px; /* consistent height */
-            width: auto; /* variable width */
+            height: 250px;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
             border: 3px solid var(--primary);
             border-radius: 10px;
-            object-fit: cover;
         }
 
         footer {
@@ -126,30 +123,26 @@
         <h2>PORTFOLIO</h2>
     </section>
 
-    <p class="portfolio-intro">
+    <div class="intro-text">
         Welcome to my portfolio. This collection showcases my past oil and acrylic paintings.
-    </p>
+    </div>
 
-    <main>
-        <!-- Oil Paintings Section -->
-        <div class="section-title">Oil Paintings</div>
-        <div class="portfolio-grid">
-            <img src="allwhitestilllife.jpg" alt="All White Still Life">
-            <img src="tulipboot.jpg" alt="Tulip Boot">
-            <img src="cake.jpg" alt="Cake">
-        </div>
+    <div class="section-title">Oil Paintings</div>
+    <div class="portfolio-grid">
+        <img src="allwhitestilllife.jpg" alt="All White Still Life">
+        <img src="tulipboot.jpg" alt="Tulip Boot">
+        <img src="cake.jpg" alt="Cake">
+    </div>
 
-        <!-- Acrylic Paintings Section -->
-        <div class="section-title">Acrylic</div>
-        <div class="portfolio-grid">
-            <img src="marlboroswirl.jpg" alt="Marlboro Swirl">
-            <img src="cherrybow.jpg" alt="Cherry Bow">
-            <img src="Ocean.jpg" alt="Ocean">
-            <img src="69ofHearts.jpg" alt="69 of Hearts">
-            <img src="cherrylip.jpg" alt="Cherry Lip">
-            <img src="swirls.jpg" alt="Swirls">
-        </div>
-    </main>
+    <div class="section-title">Acrylic Paintings</div>
+    <div class="portfolio-grid">
+        <img src="marlboroswirl.jpg" alt="Marlboro Swirl">
+        <img src="cherrybow.jpg" alt="Cherry Bow">
+        <img src="Ocean.jpg" alt="Ocean"> <!-- Check casing -->
+        <img src="69ofHearts.jpg" alt="69 of Hearts"> <!-- Verify filename -->
+        <img src="cherrylip.jpg" alt="Cherry Lip">
+        <img src="Swirls.jpg" alt="Swirls"> <!-- Check casing -->
+    </div>
 
     <footer>
         <p>&copy; 2025 Morgan Saunders - M6 Arts</p>
